@@ -85,5 +85,5 @@ visNetwork(allNodes, allEdges) %>%
     ),
     main=list(text="Cluster legend:", style="font-family:sans-serif;font-size:16px"),
     useGroups=FALSE
-  ) %>%
-  visSave(file="network.html")
+  )
+  #visSave(file="network.html")
