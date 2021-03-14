@@ -4,8 +4,8 @@
 library(tidyverse)
 
 # Import gene expression z-scores and list of genes of interest
-exprData <- read.csv(file="C:/Users/Bryce/Research/microtomNetwork/heatmaps/exprDataTF.csv")
-geneList <- scan(file="C:/Users/Bryce/Research/microtomNetwork/heatmaps/UGTs_and_MTs.txt", what="list", quiet=TRUE)
+exprData <- read.csv(file="C:/Users/Bryce/Documents/microtomNetwork/heatmaps/data/exprDataTF.csv")
+geneList <- scan(file="C:/Users/Bryce/Documents/microtomNetwork/heatmaps/UGTs_and_MTs.txt", what="list", quiet=TRUE)
 
 # Filter expression data to include only those genes from the list provided
 plotData <- exprData[exprData$Gene %in% geneList,]
@@ -28,10 +28,11 @@ heatmap <- ggplot(data=plotData, mapping=aes(x=Sample, y=Gene, fill=Z_score)) +
   scale_fill_gradient2(midpoint=0, low="blue", mid="white", high="red", limits=c(-max(abs(plotData$Z_score)), max(abs(plotData$Z_score)))) +
   theme_minimal() +
   theme(legend.position="top", legend.direction="horizontal",
-        axis.text.x=element_text(angle=90, hjust=1))
+        axis.text.x=element_text(angle=90, hjust=1),
+        axis.text=element_text(color="black"))
 
 # Save heatmap as a .pdf
-ggsave(filename="C:/Users/Bryce/Research/microtomNetwork/heatmaps/figures/UGTs_and_MTs.pdf",
+ggsave(filename="C:/Users/Bryce/Documents/microtomNetwork/heatmaps/figures/UGTs_and_MTs.pdf",
        plot=heatmap,
        device=pdf(),
        width=max(str_length(geneList))/16 + 5, height=(nrow(plotData)/75) + 1.5, units="in")

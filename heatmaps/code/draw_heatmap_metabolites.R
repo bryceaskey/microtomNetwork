@@ -28,7 +28,8 @@ heatmap <- ggplot(data=plotData, mapping=aes(x=Sample, y=Compound.name, fill=Z_s
   scale_fill_gradient2(midpoint=0, low="blue", mid="white", high="red", limits=c(-max(abs(plotData$Z_score)), max(abs(plotData$Z_score)))) +
   theme_minimal() +
   theme(legend.position="top", legend.direction="horizontal",
-        axis.text.x=element_text(angle=90, hjust=1))
+        axis.text.x=element_text(angle=90, hjust=1),
+        axis.text=element_text(color="black"))
 
 # Save heatmap as a .pdf
 ggsave(filename="C:/Users/Bryce/Research/microtomNetwork/heatmaps/figures/flavonoids.pdf",
