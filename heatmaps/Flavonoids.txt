@@ -1,19 +1,19 @@
 Naringenin
 Naringenin chalcone
-Naringenin 7-glucoside
+Naringenin 7-O-glucoside (Prunin)
 Quercetin
-Quercetin 3-glucoside
-Quercetin 3-rutinoside
-Dihydroquercetin
+Quercetin 3-O-glucoside (Isotrifoliin)
+Quercetin 3-O-rutinoside
+Dihydroquercetin (Taxifolin)
 Kaempferol
-Kaempferol 3-glucoside
-Kaempferol 3-rutinoside
-Kaempferol 3-glusode-2’-rhamnoside
-Dihydrokaempferol
+Kaempferol 3-O-glucoside
+Kaempferol 3-O-rutinoside (Nicotiflorin)
+Kaempferol 3-O-glucoside-2'-O-rhamnoside
+Dihydrokaempferol (Aromadedrin)
 Myricetin
-Malvidin 3-glucoside
+Malvidin 3-O-glucoside (Oenin)
 Delphinidin
-Delphinidin 3-glucoside
-Delphinidin 3-rutinoside
+Delphinidin 3-O-glucoside (Mirtillin)
+Delphinidin 3-O-rutinoside (Tulipanin)
 Palargonin chloride
-Petunidin 3-rutinoside
+Petunidin 3-O-rutinoside
